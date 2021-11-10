@@ -53,7 +53,20 @@ TEST_CASE("PART C") {
 }
 
 TEST_CASE("PART E") {
-    
+    double x, y, z;
+    x = 10;
+    y = 20;
+    z = 30;
+    Coord3D *ppos = createCoord3D(x,y,z);   
+    x = 5.5;
+    y = -1.4;
+    z = 7.77;
+    Coord3D *pvel = createCoord3D(x,y,z);
+    move(ppos, pvel, 10.0);    
+    CHECK((*ppos).x == 65);
+    CHECK((*ppos).y == 6);
+    CHECK((*ppos).z == 107.7);
+
 }
 
 TEST_CASE("Negative Coordinates") {
