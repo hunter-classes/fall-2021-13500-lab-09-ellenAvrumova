@@ -16,12 +16,22 @@ Coord3D* fartherFromOrigin(Coord3D *p1, Coord3D *p2) {
     else {
         return p2;
     }
-    
 }
 
 void move(Coord3D *ppos, Coord3D *pvel, double dt) {
     (*ppos).x = (*ppos).x + (*pvel).x * dt;
     (*ppos).y = (*ppos).y + (*pvel).y * dt;
     (*ppos).z = (*ppos).z + (*pvel).z * dt;
-    
+}
+
+Coord3D* createCoord3D(double x, double y, double z) {
+    Coord3D *coordinate = new Coord3D;
+    (*coordinate).x = x;
+    (*coordinate).y = y;
+    (*coordinate).z = z;
+    return coordinate;
+}
+
+void deleteCoord3D(Coord3D *p) {
+    delete p;
 }
