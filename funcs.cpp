@@ -6,7 +6,7 @@
 
 double length(Coord3D *p) {
     double length = sqrt(pow((*p).x,2) + pow((*p).y,2) + pow((*p).z,2));
-    return length;
+    return round(length * 10000.0)/10000.0;
 }
 
 Coord3D* fartherFromOrigin(Coord3D *p1, Coord3D *p2) {
