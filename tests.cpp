@@ -16,9 +16,9 @@ TEST_CASE("Part A") {
 }
 
 TEST_CASE("PART B") {
-    Coord3D pointA = {10, 20, 30};
-    Coord3D pointB = {-20, 21, -22};
-    CHECK(fartherFromOrigin(&pointA, &pointB) == &pointA);
+    Coord3D pointA = {30, 20, 10};
+    Coord3D pointB = {10, 20, 30};
+    CHECK(fartherFromOrigin(&pointA, &pointB) == &pointB);
 
     pointA = {31, 73, 48};
     pointB = {57, 89, 65};
@@ -53,28 +53,29 @@ TEST_CASE("PART C") {
 }
 
 TEST_CASE("PART E") {
-    double x, y, z;
-    x = 10;
-    y = 20;
-    z = 30;
-    Coord3D *ppos = createCoord3D(x,y,z);   
-    x = 5.5;
-    y = -1.4;
-    z = 7.77;
-    Coord3D *pvel = createCoord3D(x,y,z);
-    move(ppos, pvel, 10.0);    
-    CHECK((*ppos).x == 65);
-    CHECK((*ppos).y == 6);
-    CHECK((*ppos).z == 107.7);
-
+    // double x, y, z;
+    // x = 10;
+    // y = 20;
+    // z = 30;
+    // Coord3D *ppos = createCoord3D(x,y,z);   
+    // x = 5.5;
+    // y = -1.4;
+    // z = 7.77;
+    // Coord3D *pvel = createCoord3D(x,y,z);
+    // move(ppos, pvel, 10.0);    
+    // CHECK((*ppos).x == 65);
+    // CHECK((*ppos).y == 6);
+    // CHECK((*ppos).z == 107.7);
 }
 
 TEST_CASE("Negative Coordinates") {
-    //Part A
+    Coord3D pointP = {-50, -23, 11};
+    CHECK(length(&pointP) == 56.1249);
 
-    //Part B
+    Coord3D pointA = {10, 20, 30};
+    Coord3D pointB = {-20, 21, -22};
+    CHECK(fartherFromOrigin(&pointA, &pointB) == &pointA);
 
-    //Part C
     Coord3D pos = {0, 0, 100.0};
     Coord3D vel = {1, -5, 0.2};
     move(&pos, &vel, 2.0);
@@ -82,5 +83,4 @@ TEST_CASE("Negative Coordinates") {
     CHECK(pos.y == -10);
     CHECK(pos.z == 100.4);
 
-    //Part E
 }
