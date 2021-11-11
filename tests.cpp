@@ -1,3 +1,11 @@
+/**
+ * Author: Ellen Avrumova
+ * Course: CSCI-135
+ * Instructor: Tong Yi & Mike Zamansky
+ * Assignment: Lab 9A, B, C, E
+ * This file tests the functions in funcs.cpp and it doesn't include part D. 
+*/
+
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
 #include <iostream>
@@ -82,5 +90,4 @@ TEST_CASE("Negative Coordinates") {
     CHECK(pos.x == 2);
     CHECK(pos.y == -10);
     CHECK(pos.z == doctest::Approx(100.4).epsilon(0.05)); //100.4
-
 }

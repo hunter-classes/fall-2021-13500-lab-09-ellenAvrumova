@@ -1,3 +1,9 @@
+# Author: Ellen Avrumova
+# Course: CSCI-135
+# Instructor: Tong Yi & Mike Zamansky
+# Assignment: Lab 9A, B, C, E
+# This is the Makefile for Lab 9, however it doesn't include part D 
+
 main: main.o funcs.o
 	g++ -o main main.o funcs.o
 

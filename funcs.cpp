@@ -1,3 +1,11 @@
+/**
+ * Author: Ellen Avrumova
+ * Course: CSCI-135
+ * Instructor: Tong Yi & Mike Zamansky
+ * Assignment: Lab 9A, B, C, E
+ * These are the functions for all lab parts except for part D.
+*/
+
 #include <iostream>
 #include <math.h>
 #include "cmath"

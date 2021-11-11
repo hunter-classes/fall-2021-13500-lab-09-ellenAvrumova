@@ -1,3 +1,11 @@
+/**
+ * Author: Ellen Avrumova
+ * Course: CSCI-135
+ * Instructor: Tong Yi & Mike Zamansky
+ * Assignment: Lab 9A, B, C, E
+ * This is the main file that calls all the functions from funcs.cpp
+*/
+
 #include <iostream>
 #include "coord3d.h"
 #include "funcs.h"
