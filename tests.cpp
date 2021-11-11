@@ -14,13 +14,13 @@
 
 TEST_CASE("Part A") {
     Coord3D pointP = {10, 20, 30};
-    CHECK(length(&pointP) == doctest::Approx(37.4166).epsilon(0.05)); //37.4166
+    CHECK(length(&pointP) == doctest::Approx(37.4166).epsilon(0.05));
 
     pointP = {31, 45, 62};
-    CHECK(length(&pointP) == doctest::Approx(82.6438).epsilon(0.05)); //82.6438
+    CHECK(length(&pointP) == doctest::Approx(82.6438).epsilon(0.05));
 
     pointP = {26, 103, 12};
-    CHECK(length(&pointP) == doctest::Approx(106.9065).epsilon(0.05)); //106.9065
+    CHECK(length(&pointP) == doctest::Approx(106.9065).epsilon(0.05));
 }
 
 TEST_CASE("PART B") {
@@ -78,7 +78,7 @@ TEST_CASE("PART E") {
 
 TEST_CASE("Negative Coordinates") {
     Coord3D pointP = {-50, -23, 11};
-    CHECK(length(&pointP) == doctest::Approx(56.1249).epsilon(0.05)); //56.1249
+    CHECK(length(&pointP) == doctest::Approx(56.1249).epsilon(0.05));
 
     Coord3D pointA = {10, 20, 30};
     Coord3D pointB = {-20, 21, -22};
@@ -89,5 +89,5 @@ TEST_CASE("Negative Coordinates") {
     move(&pos, &vel, 2.0);
     CHECK(pos.x == 2);
     CHECK(pos.y == -10);
-    CHECK(pos.z == doctest::Approx(100.4).epsilon(0.05)); //100.4
+    CHECK(pos.z == doctest::Approx(100.4).epsilon(0.05));
 }
